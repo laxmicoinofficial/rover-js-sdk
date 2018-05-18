@@ -26,7 +26,7 @@ By default, `payments()` provides access to the [`payments_all`](http://www.rove
 ## Examples
 
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 server.payments()

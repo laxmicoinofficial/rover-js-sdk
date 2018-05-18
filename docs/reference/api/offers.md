@@ -22,7 +22,7 @@ In order to read information about offers from a Orbit  server, the [`server`](.
 ## Examples
 
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 server.offers("accounts", "GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGSNFHEYVXM3XOJMDS674JZ")

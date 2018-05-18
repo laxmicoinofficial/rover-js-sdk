@@ -28,8 +28,8 @@ In this example you must ensure that the destination account exists
 // To run this code in the Chrome, open the console tab in the DevTools.
 // The hotkey to open the DevTools console is Ctrl+Shift+J or (Cmd+Opt+J on Mac).
 
-// To use in node, do `npm install rover-sdk` and uncomment the following line.
-// var RoverSdk = require('rover-sdk');
+// To use in node, do `npm install rover-network-sdk` and uncomment the following line.
+// var RoverSdk = require('rover-network-sdk');
 
 // The source account is the account we will be signing and sending from.
 var sourceSecretKey = 'SAKRB7EE6H23EF733WFU76RPIYOPEWVOMBBUXDQYQ3OF4NF6ZY6B6VLW';
@@ -100,7 +100,7 @@ server.loadAccount(sourcePublicKey)
 Let's say you want to look at an account's transaction history.  You can use the `transactions()` command and pass in the account address to `forAccount` as the resource you're interested in.
 
 ```javascript
-var RoverSdk = require('rover-sdk')
+var RoverSdk = require('rover-network-sdk')
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 var accountId = 'GBBORXCY3PQRRDLJ7G7DWHQBXPCJVFGJ4RGMJQVAX6ORAUH6RWSPP6FM';
 
@@ -127,7 +127,7 @@ rover-js-sdk provides streaming support for Orbit  endpoints using `EventSource`
 
 Try submitting a transaction (via the guide above) while running the following code example.
 ```javascript
-var RoverSdk = require('rover-sdk')
+var RoverSdk = require('rover-network-sdk')
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 // Get a message any time a payment occurs. Cursor is set to "now" to be notified

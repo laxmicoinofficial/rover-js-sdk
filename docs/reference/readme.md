@@ -14,7 +14,7 @@ rover-js-sdk uses the [Builder pattern](https://en.wikipedia.org/wiki/Builder_pa
 to Orbit . Starting with a [server](https://stellar.github.io/js-stellar-sdk/Server.html) object, you can chain methods together to generate a query.
 (See the [Orbit  reference](https://www.rover.network/developers/reference/) documentation for what methods are possible.)
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 // get a list of transactions that occurred in ledger 1400
 server.transactions()
@@ -38,7 +38,7 @@ Orbit  will start sending responses from either the beginning of time or from th
 For example, to log instances of transactions from a particular account:
 
 ```javascript
-var RoverSdk = require('rover-sdk')
+var RoverSdk = require('rover-network-sdk')
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 var lastCursor=0; // or load where you left off
 
@@ -98,7 +98,7 @@ See the [Building Transactions](https://www.rover.network/developers/rover-js-ba
 ## Submitting transactions
 Once you have built your transaction, you can submit it to the Rover network with `Server.submitTransaction()`.
 ```js
-var RoverSdk = require('rover-sdk')
+var RoverSdk = require('rover-network-sdk')
 RoverSdk.Network.useTestNetwork();
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 

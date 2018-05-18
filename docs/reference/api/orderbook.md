@@ -19,7 +19,7 @@ An orderbook is a summary of all offers for a given pair of [`Assets`](http://ww
 ## Examples
 
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 server.orderbook(new RoverSdk.Asset("EUR", "GCQPYGH4K57XBDENKKX55KDTWOTK5WDWRQOH2LHEDX3EKVIQRLMESGBG"), new RoverSdk.Asset("USD", "GC23QF2HUE52AMXUFUH3AYJAXXGXXV2VHXYYR6EYXETPKDXZSAW67XO4"))

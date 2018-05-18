@@ -20,7 +20,7 @@ The mechanics underlying Dakibot (i.e., how a new account is funded) are determi
 ## Examples
 
 ```js
-var RoverLib = require('rover-sdk');
+var RoverLib = require('rover-network-sdk');
 
 var new_seed = RoverLib.Keypair.random()
 var new_address = new_seed.accountId()

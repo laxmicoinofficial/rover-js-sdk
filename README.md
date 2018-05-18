@@ -20,7 +20,7 @@ rover-js-sdk exposes all rover-js-sdk classes so you don't have to install rover
 
 Using npm to include rover-js-sdk in your own project:
 ```shell
-npm install --save rover-sdk
+npm install --save rover-network-sdk
 ```
 
 For browsers, [use Bower to install rover-js-sdk](#to-self-host-for-use-in-the-browser). It exports a
@@ -38,12 +38,12 @@ relative to your html file.
 ### To use as a module in a Node.js project
 1. Install it using npm:
   ```shell
-  npm install --save rover-sdk
+  npm install --save rover-network-sdk
   ```
 
 2. require/import it in your JavaScript:
   ```js
-  var RoverSdk = require('rover-sdk');
+  var RoverSdk = require('rover-network-sdk');
   ```
 
 #### Help! I'm having trouble installing the SDK on Windows
@@ -64,7 +64,7 @@ In the event the above does not work, please join us on our community slack to g
 1. Install it using [bower](http://bower.io):
 
   ```shell
-  bower install rover-sdk
+  bower install rover-network-sdk
   ```
 
 2. Include it in the browser:

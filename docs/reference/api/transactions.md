@@ -25,7 +25,7 @@ By default, `transactions()` provides access to the [`transactions_all`](http://
 ## Examples
 
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 server.transactions()

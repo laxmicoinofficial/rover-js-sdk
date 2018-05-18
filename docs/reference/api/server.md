@@ -34,7 +34,7 @@ It is important to note that `server` methods query [Orbit  endpoints](http://ww
 ## Examples
 
 ```js
-var RoverSdk = require('rover-sdk');
+var RoverSdk = require('rover-network-sdk');
 var server = new RoverSdk.Server('https://orbit-testnet.rover.network');
 
 server.accounts()
